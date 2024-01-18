@@ -44,11 +44,7 @@ public class ProdutoController {
 		- DIP: A classe ProdutoController já depende de uma interface chama IProdutoRepository. Considere adicionar mais interfaces como IReadService, ICreateService, IUpdateService, IDeleteService, IRepostaEntidade 
 	*/
 	
-	
-	
-	
- 	
-	
+
 	@Autowired
 	private IProdutoRepository produtoRepository;
 	
