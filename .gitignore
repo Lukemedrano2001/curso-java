@@ -1,9 +1,5 @@
 bin/
 
-build/
-
-libs/
-
 .settings/
 
 .classpath
