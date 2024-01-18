@@ -1,0 +1,25 @@
+	Estado:
+		Atributos: Nome do estado, sigla do estado, região, população, área, etc.
+		Relacionamentos:
+			Um estado tem muitas cidades (1 para N).
+			Um estado tem muitos prefeitos (1 para N - um para cada cidade).
+			Um estado tem muitas empresas (1 para N).
+
+	Cidade:
+		Atributos: Nome da cidade, população, código postal, etc.
+		Relacionamentos:
+			Uma cidade pertence a um estado (1 para 1).
+			Uma cidade pode ter muitos prefeitos (1 para N - ao longo do tempo, considerando diferentes mandatos).
+			Uma cidade pode abrigar muitas empresas (1 para N).
+	
+	Prefeito:
+		Atributos: Nome do prefeito, partido político, mandato, etc.
+		Relacionamentos:
+			Um prefeito governa uma cidade (1 para 1).
+			Um prefeito pertence a um estado (1 para 1).
+	
+	Empresa:
+		Atributos: Nome da empresa, setor, receita, etc.
+		Relacionamentos:
+			Uma empresa pode ter muitas filiais em várias cidades (1 para N).
+			Uma empresa pode operar em muitos estados (N para N).

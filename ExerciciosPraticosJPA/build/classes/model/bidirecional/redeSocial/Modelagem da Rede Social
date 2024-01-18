@@ -1,0 +1,30 @@
+		Usuário:
+			Atributos: ID, Nome, Email, Senha
+			Relacionamentos:
+				Apenas uma Configuração (1 para 1, Unidirecional): Um usuário tem apenas uma configuração disponível
+				Muitas Postagens (1 para n, Bidirecional): Um usuário pode criar várias postagens.
+				Muitos Comentários (1 para n, Bidirecional): Um usuário pode fazer vários comentários.
+				Muitos Amigos (1 para n, Bidirecional): Um usuário pode ter vários amigos.
+				
+		Configurações de Usuario:
+			Atributos: ID, Tipo de perfil, Tema, Idioma, Região
+			Relacionamento: 
+				Apenas um Usuário (1 para  1, Unidirecional): Uma configuração pertence apenas a um usuário
+				
+		Postagem:
+			Atributos: ID, Título, Conteúdo, Data de Publicação
+			Relacionamentos:
+				Um Usuário (n para 1, Bidirecional): Cada postagem é criada por um único usuário.
+				Muitos Comentários (1 para n, Bidirecional): Uma postagem pode ter vários comentários.
+				Muitas Hashtags (n para n, Bidirecional): Uma postagem pode estar associada a várias hashtags, e uma hashtag pode estar associada a várias postagens.
+			
+		Comentário:
+			Atributos: ID, Conteúdo, Data de Comentário
+			Relacionamentos:
+				Um Usuário (n para 1, Bidirecional): Cada comentário é feito por um único usuário.
+				Uma Postagem (n para 1, Bidirecional): Cada comentário está associado a uma única postagem.
+				
+		Hashtag:
+			Atributos: ID, Nome
+			Relacionamentos:
+				Muitas Postagens (n para n, Bidirecional): Uma hashtag pode estar associada a várias postagens, e uma postagem pode estar associada a várias hashtags.

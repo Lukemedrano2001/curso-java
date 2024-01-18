@@ -1,0 +1,45 @@
+.conteudo{
+	-fx-background-color: #000;
+	background-color: #000;
+	
+	-fx-font-family: Oswald;
+	font-family: Oswald;
+}
+
+.titulo{
+	-fx-text-fill: #48B2EE;
+	-fx-font-size: 28px;
+	font-size: 28px;
+}
+
+.numero{	
+	-fx-text-fill: #FFF;
+	-fx-font-size: 28px;
+	font-size: 28px;
+}
+
+.botoes{
+	-fx-background-color: #FFF;
+	background-color: #FFF;
+	
+	-fx-text-fill: #48B2EE;
+	-fx-font-size: 28px;
+	font-size: 28px;
+	
+	-fx-min-width: 60px;
+	-fx-min-height: 60px;
+	
+	min-width: 60px;
+	min-height: 60px;
+	
+	-fx-background-radius: 15px;
+}
+
+
+.numero-positivo{
+	-fx-text-fill: #166F00;
+}
+
+.numero-negativo{
+	-fx-text-fill: #EC0600;
+}

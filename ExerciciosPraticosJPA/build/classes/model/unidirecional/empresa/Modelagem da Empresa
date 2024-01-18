@@ -1,0 +1,35 @@
+		Pessoa (Abstrata):
+			Atributos: ID, idade, Nome, Email, Senha, Data de Nascimento
+			Relacionamento (Herança): 
+				Cliente é uma Pessoa
+				Funcionário é uma Pessoa
+		
+		Cliente:
+			Atributos: 
+			Relacionamentos:
+				Muitos Telefones (1 para n): Um cliente pode ter vários telefones.
+				Muitos Endereços (1 para n): Um cliente pode ter vários endereços.
+				Muitos Serviços (n para n): Um cliente pode solicitar vários serviços, e um serviço pode ser solicitado por vários clientes.
+
+		Funcionário:
+			Atributos: Cargo, Departamento, Salário
+			Relacionamentos:
+				Muitos Telefones (1 para n): Um funcionário pode ter vários telefones.
+				Muitos Endereços (1 para n): Um funcionário pode ter vários endereços.
+				Muitos Serviços Prestados (n para n): Um funcionário pode prestar vários serviços, e um serviço pode ser prestado por vários funcionários.
+		
+		Telefone:
+			Atributos: ID, DDD, Número
+			Relacionamentos:
+				Um Cliente ou Funcionário (n para 1): Um telefone pertence a um cliente ou funcionário.
+		
+		Endereço:
+			Atributos: ID, Logradouro, Complemento
+			Relacionamentos:
+				Um Cliente ou Funcionário (n para 1): Um endereço pertence a um cliente ou funcionário.
+		
+		Serviço:
+			Atributos: ID, Descrição, Preço
+			Relacionamentos:
+				Muitos Clientes (n para n): Um serviço pode ser solicitado por vários clientes, e um cliente pode solicitar vários serviços.
+				Muitos Funcionários (n para n): Um serviço pode ser prestado por vários funcionários, e um funcionário pode prestar vários serviços.

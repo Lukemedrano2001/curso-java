@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" 
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="exercicios_praticos_jpa">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		
+		<class>model.bidirecional.redeSocial.Usuario</class>
+		<class>model.bidirecional.redeSocial.ConfiguracoesUsuario</class>
+		<class>model.bidirecional.redeSocial.Amizade</class>
+		<class>model.bidirecional.redeSocial.Postagem</class>
+		<class>model.bidirecional.redeSocial.Comentario</class>
+		<class>model.bidirecional.redeSocial.HashTag</class>
+		
+		<class>model.unidirecional.empresa.Pessoa</class>
+		<class>model.unidirecional.empresa.Cliente</class>
+		<class>model.unidirecional.empresa.Funcionario</class>
+		<class>model.unidirecional.empresa.Endereco</class>
+		<class>model.unidirecional.empresa.Telefone</class>
+		<class>model.unidirecional.empresa.Servico</class>
+		
+		<class>model.composicao.escola.Pessoa</class>
+		<class>model.composicao.escola.Aluno</class>
+		<class>model.composicao.escola.Professor</class>
+		<class>model.composicao.escola.Endereco</class>
+		
+		
+		<properties>
+            <!-- Configurações do PostgreSQL -->
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/exercicios_praticos_jpa" />
+            <property name="javax.persistence.jdbc.user" value="postgres" />
+            <property name="javax.persistence.jdbc.password" value="1234" />
+
+			<!-- Configuração do Hibernate -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL91Dialect" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+        </properties>
+	</persistence-unit>
+</persistence>

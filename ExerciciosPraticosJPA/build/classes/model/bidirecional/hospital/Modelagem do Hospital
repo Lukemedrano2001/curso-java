@@ -1,0 +1,28 @@
+		Médico:
+			Atributos: ID, Nome, Especialidade, entre outros.
+			Relacionamentos: 
+				Muitas Consultas (1 para n): Um médico pode realizar várias consultas.
+		
+		Paciente:
+			Atributos: ID, Nome, Idade, entre outros.
+			Relacionamentos: 
+				Muitas Consultas (1 para n): Um paciente pode ter várias consultas.
+			
+		Consulta:
+		
+		Atributos: ID, Data, Hora, entre outros.
+		Relacionamentos:
+			Um Médico (n para 1): Cada consulta é conduzida por um único médico.
+			Um Paciente (n para 1): Cada consulta está associada a um único paciente.
+			Uma Receita (1 para 1): Cada consulta resulta em uma única receita.
+		
+		Receita:
+			Atributos: ID, Data, Observações, entre outros.
+			Relacionamentos:
+				Uma Consulta (1 para 1): Cada receita está associada a uma única consulta.
+				Muitos Medicamentos (n para n): Uma receita pode conter vários medicamentos.
+		
+		Medicamento:
+		Atributos: ID, Nome, Dosagem, entre outros.
+		Relacionamentos:
+			Muitas Receitas (n para n): Um medicamento pode estar presente em várias prescrições.

@@ -1,0 +1,26 @@
+
+Claro, aqui está a modelagem com as cardinalidades destacadas:
+
+Aluno:
+	Atributos: Matrícula, Nome, Data de Nascimento, Endereço, Email
+	Relacionamentos: 
+		Cursa Disciplinas (1 para n)
+		Pertence a um Curso (n para 1)
+
+Professor:
+	Atributos: Número de Registro, Nome, Especialidade, Email
+	Relacionamentos:
+		Ministra Disciplinas (1 para n)
+		Pertence a um Curso (se associado a um curso) (n para 1)
+	 
+Curso:
+	Atributos: Código do Curso, Nome do Curso, Tipo (Bacharelado, Licenciatura, etc.)
+	Relacionamentos: 
+		Tem Alunos (n para n), Tem Professores (n para n)
+		Oferece Disciplinas (n para n)
+	
+Disciplina:
+	Atributos: Código da Disciplina, Nome da Disciplina, Carga Horária
+	Relacionamentos: 
+		É ofertada por um Curso (n para 1)
+		É cursada por Alunos (n para n), É ministrada por Professores (n para n)

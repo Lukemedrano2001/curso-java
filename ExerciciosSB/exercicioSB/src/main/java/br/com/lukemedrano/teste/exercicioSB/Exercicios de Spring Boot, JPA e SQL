@@ -1,0 +1,24 @@
+Faça uma API RESTful usando o Spring Boot, JPA e Modelagem de classes e tabelas no banco de dados
+
+Exemplo de classes:
+	- Cliente
+	- Funcionario
+	- Pedido
+	- Produto
+	- Compra
+	- Telefone
+	- Endereço
+	- Serviço
+
+Retorne as mensagens em JSON e os status da requisição, faça o tratamento de erro em cada método
+
+Use padrões de projeto como MVC, DDD, SOLID e outros
+Use de conceitos da programação orientada a objetos, por exemplo:
+	- Herança
+	- Encapsulamento
+	- Polimorfismo
+	- Abstração
+	- Sobrecarga
+	- Composição
+	- Interfaces
+	- Relacionamentos (1 para 1, 1 para N e N para N)

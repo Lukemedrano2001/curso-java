@@ -1,0 +1,18 @@
+	Pessoa (Abstrata):
+		Atributos: ID, Nome, Data de Nascimento
+		Relacionamento (Herança): 
+			Cliente é uma Pessoa
+			Funcionário é uma Pessoa
+	
+	Professor:
+		Atributos: 
+		Relacionamentos:
+			Tem vários Alunos (n para n)
+		
+	Aluno:
+		Atributos:
+		Relacionamentos:
+			Tem vários professores (n para n)
+		
+	Endereco:
+		Atributos: Logradouro, Complemento

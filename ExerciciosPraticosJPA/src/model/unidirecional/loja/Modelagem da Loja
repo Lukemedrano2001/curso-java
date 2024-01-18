@@ -1,0 +1,40 @@
+Cliente:
+	Atributos: ID, Nome, Email, Telefone, Outros atributos específicos
+	Relacionamentos: 
+		Realiza Muitos Pedidos (1 para n)
+		Tem Produtos Favoritos (n para n)
+
+Endereço:
+	Atributos: ID, Rua, Cidade, CEP, Outros atributos específicos
+	Relacionamentos: 
+		Pertence a Muitos Clientes (n para 1)
+		Localizado em Muitos Pedidos (n para 1)
+
+Estoque:
+	Atributos: ID, Nome do Produto, Quantidade em Estoque, Outros atributos específicos
+	Relacionamentos: 
+		Contém Muitos Produtos (n para n)
+
+ItemPedido:
+	Atributos: ID, Quantidade, Preço Unitário, Outros atributos específicos
+	Relacionamentos: 
+		Relacionado a Um Produto (n para 1)
+		Associado a Um Pedido (n para 1)
+
+Pedido:
+	Atributos: ID, Data, Total, Outros atributos específicos
+	Relacionamentos: 
+		Feito por Um Cliente (n para 1)
+		Contém Muitos Itens de Pedido (1 para n)
+
+Produto:
+	Atributos: ID, Descrição, Preço, Outros atributos específicos
+	Relacionamentos: 
+		Presente em Muitos Pedidos (n para n)
+		Está nos Produtos Favoritos de Muitos Clientes (n para n)
+
+Produtos Favoritos:
+	Atributos: ID, Data de Adição, Categoria Favorita, Avaliação do Produto
+	Relacionamentos: 
+		Contém Muitos Produtos (n para n)
+		Pertence a muitos Clientes (n para n)
